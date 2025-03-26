@@ -1,48 +1,100 @@
-v<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Food Blog</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Poppins', sans-serif;
             margin: 0;
             padding: 0;
+            background: #f4f4f9;
+            color: #333;
             text-align: center;
         }
         header {
-            background: #333;
+            background: linear-gradient(to right, #ff7e5f, #feb47b);
             color: white;
-            padding: 20px;
+            padding: 40px 20px;
+        }
+        header h1 {
+            font-size: 3rem;
+            letter-spacing: 2px;
         }
         section {
-            padding: 20px;
+            padding: 40px 20px;
+        }
+        section h2 {
+            font-size: 2rem;
+            color: #ff7e5f;
+        }
+        section p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto 20px;
+        }
+        .food-image {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-top: 20px;
         }
         footer {
             background: #333;
-            color: purple;
-            padding: 10px;
-            position: absolute;
+            color: #fff;
+            padding: 20px;
+            position: fixed;
             bottom: 0;
             width: 100%;
+            text-align: center;
+            font-size: 1rem;
+        }
+        footer a {
+            color: #feb47b;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+        .contact-info p {
+            font-size: 1.2rem;
+            color: #ff7e5f;
         }
     </style>
 </head>
 <body>
+
     <header>
-        <h1>Welcome to My Food Blog everyone</h1>
+        <h1>Welcome to My Delicious Food Blog</h1>
     </header>
+
     <section>
         <h2>About Food</h2>
-        <p>Food is a universal language that brings people together. From traditional dishes to modern cuisine, food is an essential part of our culture and daily life.</p>
+        <p>Food is a universal language that brings people together. From vibrant street food to gourmet delicacies, every bite tells a story. Explore the world of food and indulge in a symphony of flavors.</p>
+        <img class="food-image" src="https://via.placeholder.com/1200x500?text=Delicious+Food" alt="Delicious Food">
     </section>
+
     <section>
-        <h2>Contact</h2>
-        <p>Email: example@example.com</p>
+        <h2>Featured Recipes</h2>
+        <p>Here are some of our featured recipes to tantalize your taste buds!</p>
+        <div>
+            <img class="food-image" src="https://via.placeholder.com/1200x500?text=Recipe+1" alt="Recipe 1">
+            <img class="food-image" src="https://via.placeholder.com/1200x500?text=Recipe+2" alt="Recipe 2">
+        </div>
     </section>
+
+    <section class="contact-info">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:example@example.com">example@example.com</a></p>
+    </section>
+
     <footer>
-        &copy; 2025 My Food Blog
+        &copy; 2025 My Food Blog | <a href="#">Privacy Policy</a>
     </footer>
+
 </body>
 </html>
